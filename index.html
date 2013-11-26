@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang=en-ca>
+<head>
+  <meta charset=utf-8>
+  <title>Forms</title>
+  <link href="css/general.css" rel="stylesheet">
+</head>
+<body>
+
+	<form>
+
+		<div class="column-left">
+
+			<h1>Robo-Unicorn Science Fiction Novel Club</h1>
+			<p>If you want to join our club which you obviously do, please fill out this form in <em>detail.</em> Don't make a decision that you would regret.</p>
+
+		</div>
+
+		<div class="column-left">
+
+			<div class="field">
+				<label for="name">Name
+					<strong class="error">Please enter your name</strong>
+				</label>
+				<input type="text" id="name" class="input-text input-error" required>
+			</div>
+
+			<div class="field">
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-text" maxlength="256" required>
+			</div>
+
+			<div class="field">
+				<label for="phone">Phone</label>
+				<input type="tel" id="phone" maxlength="17">
+			</div>
+
+			<div class="field">
+				<label for="address">Address Line 1</label>
+				<input type="text" id="address" class="input-text" placehoder="" required>
+			</div>
+
+			<div class="field">
+				<label for="address">Address Line 2</label>
+				<input type="text" id="address" class="input-text" placehoder="">
+			</div>
+
+			<div class="field">
+				<label for="city">City</label>
+				<input type="text" id="city" class="input-text" placehoder="">
+			</div>
+
+			<div class="field">
+				<label for="province">Province</label>
+				<select id="province" required>
+					<option value="" selected>--</option>
+					<option value="albert">Alberta</option>
+					<option value="british-columbia">British Columbia</option>
+					<option value="manitoba">Manitoba</option>
+					<option value="new-brunswick">New Brunswick</option>
+					<option value="newfoundland-labrador">Newfoundland and Labrador</option>
+					<option value="nova-scotia">Nova Scotia</option>
+					<option value="northwest-territories">Northwest Territories</option>
+					<option value="nunavut">Nunavut</option>
+					<option value="ontario">Ontario</option>
+					<option value="prince-edwards-island">Prince Edwards Island</option>
+					<option value="quebec">Quebec</option>
+					<option value="saskatchewan">Saskatchewan</option>
+					<option value="yukon-territories">Yukon Territories</option>
+				</select>
+			</div>
+
+			<div class="field">
+				<label for="postal">Postal Code</label>
+				<input type="text" id="postal" maxlength="7" required>
+			</div>
+
+			<div class="field">
+				<label for="time">When can we meet?</label>
+				<input type="datetime-local" id="time" required>
+			</div>
+
+		</div>
+
+		<div class="column-right">
+
+			<div class="field">
+				<label for="book-num">Number of books read</label>
+				<input type="number" id="book-num" pattern="[0-9]*" min="1" max="9999">
+			</div>
+
+			<div class="field">
+				<label for="favorite">Tell us your favourite book and author</label>
+				<textarea id="favorite" class="input-text"></textarea>
+			</div>
+
+			<div class="field">
+				<label for="rate">How do you rate it?</label>
+				<select name="" id="rate" class="rating">
+					<option selected>--</option>
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+
+		</div>
+
+		<div class="column-full">
+
+			<button type="submit">Submit</button>
+
+		</div>
+
+	</form>
+
+</body>
+</html>
