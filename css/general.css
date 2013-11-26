@@ -1,0 +1,129 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+	font: normal 100%/1.4 Helvetica,sans-serif;
+
+}
+
+body {
+	margin: 0;
+}
+
+h1 {
+	margin: 0.5em 0 0 0;
+	font-size: 2.5em;
+	line-height: 1em;
+}
+
+form {
+	background-color: #fff;
+	margin: 0 auto;
+	max-width: 50em;
+	padding: 1.5em;
+	overflow: hidden;
+}
+
+.field {
+	margin: 0.5em 0 0.5em 0;
+}
+
+label {
+	font-size: 0.75em;
+	display: block;
+}
+
+input {
+	padding: 0.5rem;
+	background-color: #cfcfcf;
+	border: none;
+	font-size: 1.25em;
+}
+
+select {
+	font-size: 1.25em;
+	background-color: #cfcfcf;
+	border: 0 !important;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+}
+
+textarea {
+	background: #cfcfcf;
+	height: 10em;
+}
+
+button {
+	display: block;
+	width: 100%;
+	margin:1em 0 1em 0;
+	font-size: 2em;
+	padding: 0.5em;
+	background: #000;
+	color: #fff;
+	font-family: Helvetica,sans-seri;
+	text-transform: uppercase;
+	border: none;
+}
+
+.input-text {
+	display: inline-block;
+	width: 100%;
+
+}
+
+.error {
+	display: none;
+}
+
+
+@media only screen and (min-width: 28em) {
+
+	h1 {
+		font-size: 3em;
+	}
+}
+
+@media only screen and (min-width: 30em) {
+
+	h1 {
+		font-size: 3.5em;
+	}
+
+}
+
+@media only screen and (min-width: 40em) {
+
+	h1 {
+		font-size: 4em;
+	}
+
+	button {
+		width: 60%;
+		margin: inherit auto;
+	}
+
+	.column-left {
+		display: inline-block;
+		float: left;
+		width: 60%;
+		padding-right: 1em;
+	}
+
+	.column-right {
+		display: inline-block;
+		float: left;
+		width: 40%;
+		padding-left: 1em;
+	}
+
+	.column-full {
+		float: left;
+		display: inline-block;
+		width: 100%;
+	}
+}
