@@ -40,21 +40,18 @@ input {
 	padding: 0.5rem;
 	background-color: #cfcfcf;
 	border: none;
-	font-size: 1.25em;
 }
 
 select {
-	font-size: 1.25em;
 	background-color: #cfcfcf;
-	border: 0 !important;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-o-appearance: none;
+	border: 0;
+	border-radius: 0;
 }
 
 textarea {
 	background: #cfcfcf;
 	height: 10em;
+	border: 0;
 }
 
 button {
@@ -78,6 +75,24 @@ button {
 
 .error {
 	display: none;
+}
+
+@media only screen and (min-width: 20rem) {
+
+	input,
+	select {
+		font-size: 1.125em;
+	}
+
+}
+
+@media only screen and (min-width: 24rem) {
+
+	input,
+	select {
+		font-size: 1.25em;
+	}
+
 }
 
 
